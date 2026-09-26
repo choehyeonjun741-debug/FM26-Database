@@ -1,0 +1,11 @@
+{
+  "snapshot_date":"2026-09-26",
+  "season":"2026/27",
+  "source_player_count":4313,
+  "verified_contract_loan_records":8,
+  "remaining_records":4305,
+  "priority_order":["loan_status","contract_expiry","contract_length","weekly_wage","option_or_obligation","transfer_fee"],
+  "rules":["Never infer a fee or salary from market value.","Never convert a loan into a permanent transfer without a source.","Option-to-buy and obligation-to-buy are separate fields.","Parent-club contract and loan-club registration are separate relationships.","Conflicting sources are retained for review rather than silently overwritten."],
+  "primary_source_types":["official club announcements","league official transfer centres","Transfermarkt player profiles","Capology salary profiles"],
+  "coverage_warning":"The public Transfermarkt dataset used for bulk contract fields is only current to 2026-07-06 and does not cover 2026/27 squads, so it is not sufficient by itself for the September 2026 snapshot. Current-season loan records are therefore being verified from official league/club sources first."
+}
