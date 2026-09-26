@@ -1,0 +1,30 @@
+name: Enrich 2025-26 contracts and loans
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/raw/FM26_5LEAGUE_PLAYERS_RAW.csv'
+      - 'src/convert/enrich_contracts_2526.py'
+      - '.github/workflows/enrich-2526.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run 2025/26 enrichment
+        run: python src/convert/enrich_contracts_2526.py
+      - name: Commit enriched data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed/contracts_2526.csv data/processed/loans_2526.json data/processed/contract_loan_audit_2526.json
+          git diff --cached --quiet || git commit -m 'Enrich 2025/26 contract and loan data'
+          git push
