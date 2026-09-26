@@ -1,0 +1,16 @@
+{
+  "source_archive": "FM26_5LEAGUE_BATCH.zip",
+  "source_players": 4313,
+  "leagues": {
+    "Premier League": 1010,
+    "LaLiga": 877,
+    "Serie A": 894,
+    "Bundesliga": 799,
+    "Ligue 1": 733
+  },
+  "clubs_expected": 96,
+  "clubs_found": 96,
+  "contract_data": "not present in supplied CSV",
+  "loan_data": "not present in supplied CSV",
+  "rule": "Contract, wage, loan, option-to-buy and obligation-to-buy values must remain null/unverified until sourced. No values are to be invented."
+}
