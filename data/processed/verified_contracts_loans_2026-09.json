@@ -1,0 +1,15 @@
+{
+  "snapshot_date": "2026-09-26",
+  "season": "2026/27",
+  "verified_records": [
+    {"name":"Juma Bah","contracted_club":"Manchester City","current_club":"Augsburg","relationship":"loan","contract_expiry":"2031-06-30","loan_end":"2027-06-30","source":"Bundesliga official; Transfermarkt","notes":"Bundesliga lists Augsburg loan; Transfermarkt lists parent contract expiry. Wage not verified."},
+    {"name":"Arijon Ibrahimović","contracted_club":"FC Bayern München","current_club":"Augsburg","relationship":"loan","contract_expiry":"2028-06-30","loan_end":"2027-06-30","source":"Bundesliga official; FC Bayern official","notes":"Bundesliga transfer centre lists Augsburg loan; Bayern confirms contract through 30 June 2028."},
+    {"name":"Youssouf Fofana","contracted_club":"AC Milan","current_club":"Sevilla FC","relationship":"loan","contract_expiry":"2028-06-30","loan_end":"2027-06-30","source":"AC Milan official; Capology/Salary Sport","notes":"AC Milan confirms loan until 30 June 2027. Salary figures are estimates, not treated as official."},
+    {"name":"Jonathan David","contracted_club":"Juventus","current_club":"Atlético de Madrid","relationship":"loan","contract_expiry":"2030-06-30","loan_end":"2027-06-30","source":"Juventus official; LALIGA official","notes":"Juventus confirms five-year contract through 30 June 2030; LALIGA confirms loan to Atlético."},
+    {"name":"Marc Casadó","contracted_club":"FC Barcelona","current_club":"Deportivo A Coruña","relationship":"loan","contract_expiry":"2028-06-30","loan_end":"2027-06-30","source":"FC Barcelona official; Transfermarkt","notes":"Barcelona confirms season-long loan until 30 June 2027."},
+    {"name":"José Giménez","contracted_club":"Atlético de Madrid","current_club":"RC Deportivo","relationship":"loan","contract_expiry":"2028-06-30","loan_end":"2027-06-30","source":"Atlético Madrid official; Transfermarkt","notes":"Atlético confirms loan for 2026/27; Transfermarkt lists parent contract through 30 June 2028."},
+    {"name":"Romain Faivre","contracted_club":"AFC Bournemouth","current_club":"AJ Auxerre","relationship":"loan","contract_expiry":"2028-06-30","loan_end":"2027-06-30","weekly_wage":35000,"wage_currency":"GBP","option_to_buy":false,"source":"Ligue 1 official; Transfermarkt; Spotrac/FBref","notes":"Ligue 1 official says 2026/27 loan without purchase option. Wage is an external estimate."},
+    {"name":"Dilane Bakwa","contracted_club":"Nottingham Forest","current_club":"LOSC Lille","relationship":"loan","contract_expiry":"2030-06-30","loan_end":"2027-06-30","weekly_wage":62000,"wage_currency":"GBP","source":"Ligue 1 official; Transfermarkt; Salary Sport","notes":"Ligue 1 official confirms Lille loan; parent contract expires 30 June 2030. Wage is an external estimate."}
+  ],
+  "verification_note": "Only records supported by the cited public sources are included. Missing salary, fee, option and obligation fields remain unknown rather than being invented."
+}
