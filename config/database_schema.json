@@ -1,0 +1,10 @@
+{
+  "version": "0.1.0",
+  "entities": {
+    "player": ["player_id", "name", "current_club_id", "contract_club_id", "contract_id", "loan_id", "transfer_id", "status"],
+    "club": ["club_id", "name", "country", "league_id"],
+    "contract": ["contract_id", "player_id", "club_id", "start_date", "end_date", "wage", "currency", "status"],
+    "loan": ["loan_id", "player_id", "parent_club_id", "loan_club_id", "start_date", "end_date", "type", "option_fee", "obligation_fee"],
+    "transfer": ["transfer_id", "player_id", "from_club_id", "to_club_id", "date", "type", "fee", "currency"]
+  }
+}
