@@ -1,10 +1,36 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "entities": {
     "player": ["player_id", "name", "current_club_id", "contract_club_id", "contract_id", "loan_id", "transfer_id", "status"],
     "club": ["club_id", "name", "country", "league_id"],
-    "contract": ["contract_id", "player_id", "club_id", "start_date", "end_date", "wage", "currency", "status"],
-    "loan": ["loan_id", "player_id", "parent_club_id", "loan_club_id", "start_date", "end_date", "type", "option_fee", "obligation_fee"],
-    "transfer": ["transfer_id", "player_id", "from_club_id", "to_club_id", "date", "type", "fee", "currency"]
+    "contract": [
+      "contract_id", "player_id", "club_id", "contract_type",
+      "start_date", "end_date", "duration_years",
+      "wage_amount", "wage_currency", "wage_period",
+      "transfer_fee_amount", "transfer_fee_currency",
+      "release_clause_amount", "release_clause_currency",
+      "status", "source", "verified_at"
+    ],
+    "loan": [
+      "loan_id", "player_id", "parent_club_id", "loan_club_id",
+      "start_date", "end_date", "loan_type",
+      "loan_fee_amount", "loan_fee_currency",
+      "option_to_buy", "option_fee_amount", "option_fee_currency",
+      "obligation_to_buy", "obligation_fee_amount", "obligation_fee_currency",
+      "wage_share_parent_percent", "wage_share_loan_percent",
+      "buy_option_conditions", "status", "source", "verified_at"
+    ],
+    "transfer": [
+      "transfer_id", "player_id", "from_club_id", "to_club_id",
+      "date", "type", "fee_amount", "fee_currency", "contract_id", "source", "verified_at"
+    ]
+  },
+  "rules": {
+    "contract_and_loan_are_separate": true,
+    "current_club_is_not_necessarily_contract_owner": true,
+    "unknown_values_must_be_null": true,
+    "unverified_values_must_not_be_invented": true,
+    "loan_types": ["loan", "loan_with_option", "loan_with_obligation", "loan_with_option_and_obligation"],
+    "contract_types": ["permanent", "existing_contract", "new_contract", "extension"]
   }
 }
