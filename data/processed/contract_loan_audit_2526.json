@@ -1,0 +1,10 @@
+{
+  "season": "2025/26",
+  "players": 4313,
+  "contract_matches": 789,
+  "loan_players": 526,
+  "loan_records": 689,
+  "option_to_buy_verified": 0,
+  "obligation_to_buy_verified": 0,
+  "note": "Options/obligations remain null unless explicitly present in the source datasets; no values are invented."
+}
